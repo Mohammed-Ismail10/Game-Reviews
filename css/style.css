@@ -1,0 +1,122 @@
+/* general */
+:root {
+  --14px: 0.875rem;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  /* height: 3000px; */
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+/* general */
+
+/* header */
+header {
+  height: 30vh;
+  background-image: url(../img/wraper.png);
+  background-position: center;
+  background-size: cover;
+}
+/* header */
+
+/* nav */
+nav {
+  background-color: #3a497b !important;
+}
+
+.navbar-brand img {
+  width: 15%;
+}
+
+.nav-link {
+  font-size: 0.7656rem;
+  line-height: 1.1484rem;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: #0790c3 !important;
+}
+/* nav */
+
+/* section game */
+.game h3 {
+  font-size: var(--14px);
+  font-weight: 500;
+  line-height: 1.05rem;
+}
+
+.game h3 + span,
+#details .row span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.75rem;
+}
+
+.game p {
+  font-size: var(--14px);
+  line-height: 1.3125rem;
+}
+
+footer span {
+  font-size: 0.6563rem;
+  font-weight: 700;
+  line-height: 0.6563rem;
+  background-color: #32383e;
+}
+
+.game {
+  border: 1px solid black;
+  filter: grayscale(0.7);
+  transition: filter 0.5s, transform 0.5s;
+}
+
+.game:hover {
+  filter: grayscale(0);
+  transform: scale(1.03, 1.03);
+}
+
+footer {
+  border-top: 1px solid black;
+}
+/* section game */
+
+/* section details */
+.detailsDesc {
+  font-size: var(--14px);
+  line-height: 1.3125rem;
+}
+/* section details */
+
+/* section loading */
+#loadingWhite {
+  width: 7rem;
+  height: 7rem;
+  animation: circleWhite 1s linear infinite;
+}
+
+#loadingWhite::after {
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border-left: 5px solid red;
+  animation: circleWhite 0.5s linear infinite reverse;
+}
+
+@keyframes circleWhite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* section loading */
